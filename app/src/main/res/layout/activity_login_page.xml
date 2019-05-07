@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/rec"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/id_loginTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Login Page"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/idTV_LoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_loginTag"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/idTV_LoginPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTV_LoginEmail"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:id="@+id/id_buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTV_LoginPass">
+
+        <Button
+            android:id="@+id/idB_LoginSubmit"
+            android:layout_width="wrap_content"
+            android:background="#072533"
+            android:layout_margin="8dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/idB_LoginClear"
+            android:layout_width="wrap_content"
+            android:background="#072533"
+            android:textColor="@color/white"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/id_TV_activityMain_CREATEONE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_buttonContainer"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Not Registered? Click Here !"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
